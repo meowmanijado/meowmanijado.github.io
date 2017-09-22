@@ -11,9 +11,19 @@ module.exports = {
 		filename: 'dist/[name].bundle.js',
 		publicPath: './'
 	},
+	devtool: 'inline-source-map',
 	plugins: [
 		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin()
-	]
+	],
+	module: {
+		rules: [{
+			test: /\.css$/,
+			use: [
+				'style-loader',
+				'css-loader'
+			]
+		}]
+	}
 	
 };
