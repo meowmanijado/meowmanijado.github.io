@@ -7,14 +7,13 @@ module.exports = {
 		app: './src/index.js',
 		updateBackground: './src/updateBackground.js'
 	},
+	output: {
+		filename: 'dist/[name].bundle.js',
+		publicPath: './'
+	},
 	plugins: [
 		new CleanWebpackPlugin(['dist']),
-		new HtmlWebpackPlugin({
-			title: 'Meow Manijado'
-		})
-	],
-	output: {
-		filename: '[name].bundle.js',
-		path: path.resolve(__dirname, 'dist')
-	}
+		new HtmlWebpackPlugin()
+	]
+	
 };
