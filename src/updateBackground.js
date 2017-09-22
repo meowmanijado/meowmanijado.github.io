@@ -1,6 +1,4 @@
-window.addEventListener('click', updateBackground);
-
-function updateBackground() {
+export default function updateBackground() {
 	const randColor1 = {
 		r: Math.floor(Math.random() * 256),
 		g: Math.floor(Math.random() * 256),
