@@ -1,4 +1,55 @@
 body {
 	border: 1px solid rgba(255, 255, 255, 0.5);
 	margin: 20px;
+	color: #fff;
+	font-size: 16px;
+	background: linear-gradient(20deg, rgb(176, 136, 20), rgb(233, 135, 142));
+}
+
+.branding {
+	text-align: center;
+    /* margin: auto; */
+    /* display: grid; */
+    /* align-self: center; */
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 130px;
+}
+
+.branding-icon {
+    background: #fff;
+    width: 100px;
+    padding: 10px;
+    border-radius: 130px;
+    text-align: center;
+    margin: auto;
+}
+
+.branding img {
+	width: 100%;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-weight: normal;
+}
+
+a {
+	color: #fff;
+	font-size: 1em;
+}
+
+.social a {
+    font-size: 30px;
+    margin: 10px;
 }
