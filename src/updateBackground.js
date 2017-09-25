@@ -1,5 +1,3 @@
-window.addEventListener('click', updateBackground);
-
 function updateBackground() {
 	const randColor1 = {
 		r: Math.floor(Math.random() * 256),
@@ -18,3 +16,21 @@ function updateBackground() {
 
 	document.body.style.background = 'linear-gradient(20deg, '+color1+', '+color2+')';
 }
+
+//updateBackground();
+
+//window.addEventListener('click', updateBackground);
+
+
+// Set window height
+
+var windowHeight = window.innerHeight - 40;
+document.body.style.height = windowHeight + "px";
+
+function setWindowHeight(){
+    var windowHeight = window.innerHeight - 40;
+    document.body.style.height = windowHeight + "px";
+}
+
+window.addEventListener("resize",setWindowHeight,false);
+
