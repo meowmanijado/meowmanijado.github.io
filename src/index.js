@@ -1,15 +1,10 @@
 import _ from 'lodash';
 import updateBackground from './updateBackground.js';
-import style from './style.css'
-
-
+import style from './style.css';
+import Icon from './icon.png';
 
 function component() {
     var element = document.createElement('div');
-
-	element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-	element.classList.add('hello');
-
 	updateBackground();
 
 	var windowHeight = window.innerHeight - 40;
@@ -19,10 +14,17 @@ function component() {
 	    var windowHeight = window.innerHeight - 40;
 	    document.body.style.height = windowHeight + "px";
 	}
-	
+
 	window.addEventListener("resize",setWindowHeight,false);
 
 	window.addEventListener('click', updateBackground);
+
+
+	// Add the image
+	var myIcon = new Image();
+	myIcon.src = Icon;
+
+	element.appendChild(myIcon);
 	
 
     return element;
