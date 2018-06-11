@@ -1,0 +1,22 @@
+{
+  "name": "meowmanijado.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meowmanijado/meowmanijado.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meowmanijado/meowmanijado.github.io/issues"
+  },
+  "homepage": "https://github.com/meowmanijado/meowmanijado.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^0.5.3"
+  }
+}
