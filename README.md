@@ -1,5 +1,5 @@
 ## TODO
-* Add Analytics
+* ~~Add Analytics~~
 * Update content
 * Update default image per projects
 * Add footer on Project Page
