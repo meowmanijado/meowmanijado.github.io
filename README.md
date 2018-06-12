@@ -5,4 +5,5 @@
 * ~~Add footer on Project Page~~
 * ~~Add hover animation on project page~~
 * Add build script
+* Make responsive
 
