@@ -4631,6 +4631,16 @@ button,
   z-index: auto;
 }
 
+.transition-1s {
+  -webkit-transition: all .1s;
+          transition: all .1s;
+  transform: translate(0, 100px);
+}
+
+.transition-1s:hover {
+  transform: translate(0, 10px);
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
