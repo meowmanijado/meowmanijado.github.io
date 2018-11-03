@@ -4,7 +4,7 @@
     <title>Works | Meow Manijado</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="dist/app.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82636987-1"></script>
@@ -19,44 +19,49 @@
   <body class="bg-white font-yantramanav">
         <div class="max-w-full p-8 m-8">
             <header class="flex justify-between items-center">
-                <div class=""><a href="index.html" class="font-yantramanav font-bold text-black uppercase no-underline text-4xl">M</a></div>
+                <div class=""><a href="/" class="font-yantramanav font-bold text-black uppercase no-underline text-4xl">M</a></div>
                 <nav>
-                    <a href="works.html" class="text-black font-bold hover:text-black uppercase no-underline text-xs ml-4 hover:font-bold">Works</a>
-                    <a href="creative-dump.html" class="text-grey-darker hover:text-black uppercase no-underline text-xs ml-4 hover:font-bold">Creative Dump</a>
-                    <a href="#" class="text-grey-darker hover:text-black uppercase no-underline text-xs ml-4 hover:font-bold">TIL</a>
+                    <a href="works.html" class="active">Works</a>
+                    <a href="creative-dump.html">Creative Dump</a>
+                    <a href="#">TIL</a>
                 </nav>
             </header>
             <div class="container mx-auto">
-                <p class="text-orange mt-8 text-center font-bold">WORKS</p>
-                <p class="text-center mt-8 leading-normal">Showcase here are some of the projects I've successfully work.<br> </p>
+                <p class="title text-center">WORKS</p>
+                <p class="text-center">Showcase here are some of the projects I've successfully work.</p>
 
-                <div class="flex items-center mt-18">
+                <div class="showcase-full">
                     <div class="w-1/2">
-                        <h2 class="font-thin text-grey-dark">Plugit</h2>
-                        <p class="text-grey-dark mt-6 leading-normal">Co-working space. System monitoring for <br> time in/ out and automate billing features.</p>
-                        <p class="mt-6"> - Laravel - VueJS</p>
+                        <p class="title">Plugit</p>
+                        <p>Co-working space. System monitoring for <br> time in/ out and automate billing features.</p>
+                        <p> - Laravel - VueJS</p>
                     </div>
                     <div class="w-1/2">
-                        <div class="block relative"><img class="w-full shadow-lg" src="images/plugit.jpg" /></div>
+                        <div class="featured-img">
+                            <img src="./src/images/plugit.jpg" />
+                        </div>
                     </div>
                 </div>
 
-                <div class="flex items-center mt-18">
+                <div class="showcase-full">
                     <div class="w-1/2">
-                        <h2 class="font-thin text-grey-dark leading-loose">Tinybuds Baby</h2>
-                        <p><a href="https://tinybudsbaby.com/" class="no-underline text-black text-sm">www.tinybudsbaby.com</a></p>
-                        <p class="text-grey-dark mt-6 leading-normal">Tinybuds is an online shop selling natural products for babies. <br>Main goal is to convert the old platform from wooCommerce to Shopify, <br> and export all products, reviews and orders.</p>
-                        
-                        <p class="mt-6">- Shopify</p>
+                        <p class="title">Tinybuds Baby</p>
+                        <p><a href="https://tinybudsbaby.com/">www.tinybudsbaby.com</a></p>
+                        <p>Tinybuds is an online shop selling natural products for babies. <br>
+                            Main goal is to convert the old platform from wooCommerce to Shopify, <br> 
+                            and export all products, reviews and orders.</p>
+                        <p>- Shopify</p>
                     </div>
                     <div class="w-1/2">
-                        <div class="block relative"><img class="w-full shadow-lg" src="images/tinybuds-homepage.jpg" /></div>
+                        <div class="featured-img">
+                            <img src="./src/images/tinybuds-homepage.jpg" />
+                        </div>
                     </div>
                 </div>
 
-                <div class="text-center mt-18 leading-loose">
-                    Want to talk about potential collaborations? Cool! I’ll be happy to get to know more about it over coffee. <br> Looking forward to hearing from you! <br> <a href="mailto:sharmainemanijado@gmail.com" class="text-orange">sharmainemanijado@gmail.com</a>
-                </div>
+                <p class="text-center pt-20">
+                    Want to talk about potential collaborations? Cool! I’ll be happy to get to know more about it over coffee. <br> Looking forward to hearing from you! <br> <a href="mailto:sharmainemanijado@gmail.com">sharmainemanijado@gmail.com</a>
+                </p>
             </div>
         </div>
   </body>

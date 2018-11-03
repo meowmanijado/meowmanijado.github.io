@@ -4,7 +4,8 @@
     <title>Meow Manijado</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="dist/app.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82636987-1"></script>
@@ -17,53 +18,41 @@
 	</script>
 
   </head>
-  <body class="bg-white font-yantramanav">
-        <div class="max-w-full p-8 m-8">
-            <header class="flex justify-between items-center">
-                <div class=""><a href="#" class="font-yantramanav font-bold text-black uppercase no-underline text-4xl">M</a></div>
-                <nav>
-                    <a href="works.html" class="text-grey-darker hover:text-black uppercase no-underline text-xs ml-4 hover:font-bold">Works</a>
-                    <a href="#" class="text-grey-darker hover:text-black uppercase no-underline text-xs ml-4 hover:font-bold">TIL</a>
-                </nav>
-            </header>
-            <div class="container">
-                <p class="text-black mt-8 leading-loose font-bold">(n.) meow manijado</p>
-                <p class="leading-loose text-xl mb-4">I'm Meow, an independent Manila-based <br> 
-                    Web Developer & co-founder of Geekery, <br> primarily focused on Laravel apps and front-end stuffs. <br>
-                    Creatively writing code with a dash of dorkness. </p>
+  <body>
+    <div id="app" class="container mx-auto">
+        <header class="flex justify-between items-center">
+            <div class=""><a href="#" class="font-yantramanav font-bold text-black uppercase no-underline text-4xl">M</a></div>
+            <nav>
+                <a href="works.html">Works</a>
+                <a href="creative-dump.html">Creative Dump</a>
+                <a href="#">TIL</a>
+            </nav>
+        </header>
+        <div class="container">
+            <p class="title">(n.) meow manijado</p>
+            <p>I'm Meow, an independent Manila-based <br> 
+                Web Developer & co-founder of Geekery, <br> 
+                primarily focused on Laravel apps and front-end stuffs. <br>
+                Creatively writing code with a dash of dorkness. </p>
+            <p>Outside work, I read books, watch series/movies, and brew coffee!</p>
 
-                <p class="leading-loose text-xl">Outside work, I read books, watch series/movies, and brew coffee!</p>
-                <p class="text-black mt-8 leading-loose font-bold">(v.) work</p>
-                <p class="leading-loose text-xl mb-4">Software Developer at <a href="http://geekery.com.ph" class="text-black" alt="Geekery">Geekery</a></p>
-                    
-                <p>Previously Frontend Web Engineer at Wishland Software Technology Inc. </p>
-                <p class="text-black mt-8 leading-loose font-bold">(adv.) elsewhere</p>
-                <div class="flex mt-4">
-                    <a href="https://github.com/meowmanijado" class="mr-4" title="github">
-                        <svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Desktop" transform="translate(-47.000000, -659.000000)" fill="#000000" fill-rule="nonzero">
-                                <g id="github" transform="translate(47.000000, 659.000000)">
-                                    <path d="M6.68951613,15.2987722 C6.68951613,15.3773483 6.59677419,15.4402092 6.47983871,15.4402092 C6.34677419,15.4519957 6.25403226,15.3891348 6.25403226,15.2987722 C6.25403226,15.2201961 6.34677419,15.1573352 6.46370968,15.1573352 C6.58467742,15.1455488 6.68951613,15.2084097 6.68951613,15.2987722 Z M5.43548387,15.1219759 C5.40725806,15.2005521 5.48790323,15.2909146 5.60887097,15.3144874 C5.71370968,15.3537755 5.83467742,15.3144874 5.85887097,15.2359113 C5.88306452,15.1573352 5.80645161,15.0669726 5.68548387,15.0316134 C5.58064516,15.0041117 5.46370968,15.0433998 5.43548387,15.1219759 Z M7.21774194,15.0551862 C7.10080645,15.0826879 7.02016129,15.1573352 7.03225806,15.2476977 C7.04435484,15.3262739 7.14919355,15.3773483 7.27016129,15.3498467 C7.38709677,15.3223451 7.46774194,15.2476977 7.45564516,15.1691216 C7.44354839,15.0944743 7.33467742,15.0433998 7.21774194,15.0551862 Z M9.87096774,0 C4.27822581,0 0,4.13703316 0,9.58628767 C0,13.943334 2.81451613,17.6717713 6.83467742,18.9839926 C7.35080645,19.0743552 7.53225806,18.7639795 7.53225806,18.5086071 C7.53225806,18.2650211 7.52016129,16.9213693 7.52016129,16.0963199 C7.52016129,16.0963199 4.69758065,16.6856409 4.10483871,14.9255356 C4.10483871,14.9255356 3.64516129,13.7822529 2.98387097,13.4875925 C2.98387097,13.4875925 2.06048387,12.8707698 3.0483871,12.8825563 C3.0483871,12.8825563 4.05241935,12.9611324 4.60483871,13.8961883 C5.48790323,15.4127076 6.96774194,14.9766101 7.54435484,14.7173089 C7.63709677,14.0886998 7.89919355,13.6526023 8.18951613,13.3933011 C5.93548387,13.1497151 3.66129032,12.8314818 3.66129032,9.05197 C3.66129032,7.97154823 3.96774194,7.42937295 4.61290323,6.73790302 C4.50806452,6.4825306 4.16532258,5.42961048 4.71774194,4.07024346 C5.56048387,3.81487104 7.5,5.13102119 7.5,5.13102119 C8.30645161,4.91100803 9.1733871,4.79707264 10.0322581,4.79707264 C10.891129,4.79707264 11.7580645,4.91100803 12.5645161,5.13102119 C12.5645161,5.13102119 14.5040323,3.81094223 15.3467742,4.07024346 C15.8991935,5.43353928 15.5564516,6.4825306 15.4516129,6.73790302 C16.0967742,7.43330175 16.4919355,7.97547704 16.4919355,9.05197 C16.4919355,12.8432682 14.1169355,13.1457863 11.8629032,13.3933011 C12.233871,13.7036768 12.5483871,14.2929978 12.5483871,15.2162673 C12.5483871,16.540275 12.5362903,18.1785873 12.5362903,18.5007495 C12.5362903,18.7561219 12.7217742,19.0664976 13.233871,18.976135 C17.266129,17.6717713 20,13.943334 20,9.58628767 C20,4.13703316 15.4637097,0 9.87096774,0 Z M3.91935484,13.5504534 C3.86693548,13.5897414 3.87903226,13.680104 3.94758065,13.7547513 C4.01209677,13.8176122 4.10483871,13.8451138 4.15725806,13.7940394 C4.20967742,13.7547513 4.19758065,13.6643887 4.12903226,13.5897414 C4.06451613,13.5268805 3.97177419,13.4993789 3.91935484,13.5504534 Z M3.48387097,13.23222 C3.45564516,13.2832945 3.49596774,13.3461554 3.5766129,13.3854435 C3.64112903,13.4247316 3.72177419,13.4129451 3.75,13.3579418 C3.77822581,13.3068674 3.73790323,13.2440065 3.65725806,13.2047184 C3.5766129,13.1811456 3.51209677,13.192932 3.48387097,13.23222 Z M4.79032258,14.6308751 C4.72580645,14.6819496 4.75,14.7998138 4.84274194,14.8744611 C4.93548387,14.9648237 5.05241935,14.9766101 5.10483871,14.9137492 C5.15725806,14.8626747 5.13306452,14.7448105 5.05241935,14.6701632 C4.96370968,14.5798006 4.84274194,14.5680142 4.79032258,14.6308751 Z M4.33064516,14.0533406 C4.26612903,14.0926286 4.26612903,14.1947776 4.33064516,14.2851402 C4.39516129,14.3755027 4.50403226,14.4147908 4.55645161,14.3755027 C4.62096774,14.3244282 4.62096774,14.2222793 4.55645161,14.1319167 C4.5,14.0415542 4.39516129,14.0022661 4.33064516,14.0533406 Z" id="Shape"></path>
-                                </g>
-                            </g>
-                        </g>
-                        </svg>
-                    </a>
-                    <a href="mailto:sharmainemanijado@gmail.com">
-                        <svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs></defs>
-                        <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Desktop" transform="translate(-81.000000, -660.000000)" fill="#000000" fill-rule="nonzero">
-                                <g id="envelope" transform="translate(81.000000, 660.000000)">
-                                    <path d="M23.5453125,5.94375 C23.728125,5.7984375 24,5.934375 24,6.1640625 L24,15.75 C24,16.9921875 22.9921875,18 21.75,18 L2.25,18 C1.0078125,18 0,16.9921875 0,15.75 L0,6.16875 C0,5.934375 0.2671875,5.803125 0.4546875,5.9484375 C1.5046875,6.7640625 2.896875,7.8 7.678125,11.2734375 C8.6671875,11.9953125 10.3359375,13.5140625 12,13.5046875 C13.6734375,13.51875 15.375,11.9671875 16.3265625,11.2734375 C21.1078125,7.8 22.4953125,6.759375 23.5453125,5.94375 Z M12,12 C13.0875,12.01875 14.653125,10.63125 15.440625,10.059375 C21.6609375,5.5453125 22.134375,5.1515625 23.56875,4.0265625 C23.840625,3.815625 24,3.4875 24,3.140625 L24,2.25 C24,1.0078125 22.9921875,0 21.75,0 L2.25,0 C1.0078125,-1.33226763e-15 0,1.0078125 0,2.25 L0,3.140625 C0,3.4875 0.159375,3.8109375 0.43125,4.0265625 C1.865625,5.146875 2.3390625,5.5453125 8.559375,10.059375 C9.346875,10.63125 10.9125,12.01875 12,12 Z" id="Shape"></path>
-                                </g>
-                            </g>
-                        </g>
-                        </svg>
-                    </a>
-                </div>
+            <p class="title">(v.) work</p>
+            <p>Software Developer at <a href="https://thegeekery.co/" alt="Geekery">Geekery</a></p>
+                
+            <p>Previously Frontend Web Engineer at Wishland Software Technology Inc. </p>
+            <p class="title">(adv.) elsewhere</p>
+            <div class="flex mt-4">
+                <a href="https://github.com/meowmanijado" class="mr-4" title="github">
+                    <i data-feather="github" class="text-black"></i>
+                </a>
+                <a href="mailto:sharmainemanijado@gmail.com">
+                    <i data-feather="mail" class="text-black"></i>
+                </a>
             </div>
         </div>
+    </div>
+    <script>
+        feather.replace()
+    </script>
   </body>
 </html>
