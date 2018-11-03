@@ -1,5 +1,9 @@
 @tailwind preflight;
 
+body {
+    background: #ddd;
+}
+
 @tailwind components;
 
 @tailwind utilities;
