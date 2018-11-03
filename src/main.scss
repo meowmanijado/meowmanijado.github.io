@@ -48,6 +48,12 @@
  .showcase-full {
     @apply .flex .items-center .h-screen;
 
+    .title {
+        @apply .uppercase;
+
+        letter-spacing: 0.20rem;
+    }
+
     .featured-img {
         img {
             @apply .w-full .shadow-lg;
