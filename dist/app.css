@@ -585,9 +585,10 @@ a {
     color: #22292f; }
 
 .showcase-full {
-  display: block;
+  display: flex;
   align-items: center;
-  height: 100vh; }
+  height: 100vh;
+  flex-direction: column-reverse; }
   .showcase-full .title {
     text-transform: uppercase;
     letter-spacing: .2rem; }
@@ -599,7 +600,8 @@ a {
   .showcase-full {
     display: flex;
     align-items: center;
-    height: 100vh; }
+    height: 100vh;
+    flex-direction: row; }
     .showcase-full .title {
       text-transform: uppercase;
       letter-spacing: .2rem; }

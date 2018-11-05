@@ -46,7 +46,7 @@
  }
 
  .showcase-full {
-    @apply .block .items-center .h-screen ;
+    @apply .flex .items-center .h-screen .flex-col-reverse;
 
     .title {
         @apply .uppercase;
@@ -63,7 +63,7 @@
 
  @media (min-width: 992px) {
     .showcase-full {
-        @apply .flex .items-center .h-screen ;
+        @apply .flex .items-center .h-screen .flex-row;
 
         .title {
             @apply .uppercase;
