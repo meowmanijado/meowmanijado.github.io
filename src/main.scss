@@ -27,15 +27,25 @@
      @apply .leading-loose .mb-4;
  }
 
- nav {
-     a {
-         @apply .mx-2;
+header {
+    @apply .text-center;
 
-         &.active {
-            @apply .text-black;
-         }
-     }
- }
+    
+
+    nav {
+        @apply .py-8;
+
+        a {
+            @apply .mx-2;
+   
+            &.active {
+               @apply .text-black;
+            }
+        }
+    }
+} 
+
+ 
 
  a {
      @apply .uppercase .no-underline .text-xs .text-grey-darker .font-bold .tracking-wide;
@@ -72,6 +82,14 @@
  }
 
  @media (min-width: 992px) {
+    header {
+      @apply .flex .justify-between;
+
+      .logo a {
+            @apply .block .w-1/6;
+        }
+    }
+
     .showcase-full {
         @apply .flex .items-center .h-screen .flex-row .items-start;
 

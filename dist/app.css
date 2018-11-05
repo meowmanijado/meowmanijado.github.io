@@ -568,11 +568,16 @@ p {
   line-height: 2;
   margin-bottom: 1rem; }
 
-nav a {
-  margin-left: .5rem;
-  margin-right: .5rem; }
-  nav a.active {
-    color: #22292f; }
+header {
+  text-align: center; }
+  header nav {
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+    header nav a {
+      margin-left: .5rem;
+      margin-right: .5rem; }
+      header nav a.active {
+        color: #22292f; }
 
 a {
   text-transform: uppercase;
@@ -618,6 +623,12 @@ a {
   font-size: .25rem; }
 
 @media (min-width: 992px) {
+  header {
+    display: flex;
+    justify-content: space-between; }
+    header .logo a {
+      display: block;
+      width: 16.66667%; }
   .showcase-full {
     display: flex;
     align-items: center;
