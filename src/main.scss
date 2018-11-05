@@ -56,7 +56,7 @@ header {
  }
 
  .showcase-full {
-    @apply .flex .items-center .flex-col-reverse .-mx-10 .border-b .px-10 .py-10 .items-start;
+    @apply .flex .items-center .flex-col-reverse .-mx-10 .border-b .border-grey-lighter .px-10 .py-10;
 
     .title {
         @apply .uppercase;
@@ -91,7 +91,7 @@ header {
     }
 
     .showcase-full {
-        @apply .flex .items-center .h-screen .flex-row .items-start;
+        @apply .flex .items-center .h-screen .flex-row;
 
         .title {
             @apply .uppercase;

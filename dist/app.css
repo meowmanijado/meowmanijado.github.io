@@ -596,11 +596,11 @@ a {
   margin-left: -2.5rem;
   margin-right: -2.5rem;
   border-bottom-width: 1px;
+  border-color: #f1f5f8;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  align-items: flex-start; }
+  padding-bottom: 2.5rem; }
   .showcase-full .title {
     text-transform: uppercase;
     letter-spacing: .2rem; }
@@ -633,8 +633,7 @@ a {
     display: flex;
     align-items: center;
     height: 100vh;
-    flex-direction: row;
-    align-items: flex-start; }
+    flex-direction: row; }
     .showcase-full .title {
       text-transform: uppercase;
       letter-spacing: .2rem; }
