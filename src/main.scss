@@ -46,7 +46,7 @@
  }
 
  .showcase-full {
-    @apply .flex .items-center .h-screen .flex-col-reverse;
+    @apply .flex .items-center .flex-col-reverse .-mx-10 .border-b .px-10 .py-10;
 
     .title {
         @apply .uppercase;

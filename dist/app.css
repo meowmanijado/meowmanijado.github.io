@@ -587,8 +587,14 @@ a {
 .showcase-full {
   display: flex;
   align-items: center;
-  height: 100vh;
-  flex-direction: column-reverse; }
+  flex-direction: column-reverse;
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+  border-bottom-width: 1px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
   .showcase-full .title {
     text-transform: uppercase;
     letter-spacing: .2rem; }
