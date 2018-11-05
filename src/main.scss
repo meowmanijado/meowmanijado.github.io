@@ -46,7 +46,7 @@
  }
 
  .showcase-full {
-    @apply .flex .items-center .flex-col-reverse .-mx-10 .border-b .px-10 .py-10;
+    @apply .flex .items-center .flex-col-reverse .-mx-10 .border-b .px-10 .py-10 .items-start;
 
     .title {
         @apply .uppercase;
@@ -61,9 +61,19 @@
     }
  }
 
+ .stack {
+     @apply .text-purple;
+ }
+
+ .btn {
+    @apply .border .border-black .inline-block .px-4 .py-2 .text-black;
+
+    font-size: 0.25rem;
+ }
+
  @media (min-width: 992px) {
     .showcase-full {
-        @apply .flex .items-center .h-screen .flex-row;
+        @apply .flex .items-center .h-screen .flex-row .items-start;
 
         .title {
             @apply .uppercase;
