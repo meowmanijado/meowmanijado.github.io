@@ -46,7 +46,7 @@
  }
 
  .showcase-full {
-    @apply .flex .items-center .h-screen;
+    @apply .block .items-center .h-screen ;
 
     .title {
         @apply .uppercase;
@@ -60,6 +60,26 @@
         }
     }
  }
+
+ @media (min-width: 992px) {
+    .showcase-full {
+        @apply .flex .items-center .h-screen ;
+
+        .title {
+            @apply .uppercase;
+
+            letter-spacing: 0.20rem;
+        }
+
+        .featured-img {
+            img {
+                @apply .w-full .shadow-lg;
+            }
+        }
+    }
+ }
+
+ 
 
  /**
   * This injects any component classes registered by plugins.
