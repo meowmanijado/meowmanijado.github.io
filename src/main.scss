@@ -27,6 +27,8 @@
      @apply .leading-loose .mb-4;
  }
 
+ $animate: all 0.1s ease-in-out;
+
 header {
     @apply .text-center;
 
@@ -36,7 +38,39 @@ header {
         @apply .py-8;
 
         a {
-            @apply .mx-2;
+            @apply .mx-2 .block .relative;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -1px;
+                width: 0px;
+                height: 2px;
+                margin: 2px 0 0;
+                transition: $animate;
+                transition-duration: 0.75s;
+                opacity: 0;
+            }
+
+            &:before {
+                left: calc(50%);
+                //width: 50%;
+                background-color: #22292f;
+            }
+            &:after {
+                right: calc(50%);
+                //width: 50%;
+                background-color: #22292f;
+            }
+
+            &:hover {
+                &:before,
+                &:after {
+                    opacity: 1;
+                    width: 50%;
+                }
+            }
    
             &.active {
                @apply .text-black .border-b-2 .border-black;
