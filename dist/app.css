@@ -577,7 +577,9 @@ header {
       margin-left: .5rem;
       margin-right: .5rem; }
       header nav a.active {
-        color: #22292f; }
+        color: #22292f;
+        border-bottom-width: 2px;
+        border-color: #22292f; }
 
 a {
   text-transform: uppercase;

@@ -39,7 +39,7 @@ header {
             @apply .mx-2;
    
             &.active {
-               @apply .text-black;
+               @apply .text-black .border-b-2 .border-black;
             }
         }
     }
