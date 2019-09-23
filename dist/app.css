@@ -549,9 +549,7 @@ table {
   border-collapse: collapse; }
 
 body {
-  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: #606f7b;
-  font-size: .875rem; }
+  font-family: 'FF Tisa Pro'; }
 
 #app {
   padding-top: 3rem;
