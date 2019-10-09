@@ -1,18 +1,7 @@
-/**
- * This injects Tailwind's base styles, which is a combination of
- * Normalize.css and some additional base styles.
- *
- * You can see the styles here:
- * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/preflight";
- */
- @tailwind preflight;
+@tailwind preflight;
 
  body {
-     font-family: 'FF Tisa Pro';
+    font-family: 'Grenze', serif;
  }
 
  #app {
@@ -25,6 +14,7 @@
 
  p {
      @apply .leading-loose .mb-4;
+     color: #929292;
  }
 
  $animate: all 0.1s ease-in-out;
@@ -38,7 +28,7 @@ header {
         @apply .py-8;
 
         a {
-            @apply .mx-2 .block .relative;
+            @apply .mx-2 .block .relative no-underline;
 
             &:before,
             &:after {
@@ -82,11 +72,15 @@ header {
  
 
  a {
-     @apply .uppercase .no-underline .text-xs .text-grey-darker .font-bold .tracking-wide;
+     @apply  .font-bold .text-black;
 
      &:hover {
          @apply .text-black;
      }
+ }
+
+ .icons {
+     color: #929292;
  }
 
  .showcase-full {
@@ -106,7 +100,7 @@ header {
  }
 
  .stack {
-     @apply .text-pink-lighter;
+color: #ff9800;
  }
 
  .btn {
@@ -116,13 +110,7 @@ header {
  }
 
  @media (min-width: 992px) {
-    header {
-      @apply .flex .justify-between;
-
-      .logo a {
-            @apply .block .w-1/6;
-        }
-    }
+   
 
     .showcase-full {
         @apply .flex .items-center .h-screen .flex-row;
@@ -131,6 +119,7 @@ header {
             @apply .uppercase;
 
             letter-spacing: 0.20rem;
+            font-family: 'Poppins', sans-serif;
         }
 
         .featured-img {
