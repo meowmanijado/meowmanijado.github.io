@@ -104,9 +104,10 @@ color: #ff9800;
  }
 
  .btn {
-    @apply .border .border-black .inline-block .px-4 .py-2 .text-black;
+    @apply .border .border-black .inline-block .p-2 .text-black;
 
-    font-size: 0.25rem;
+    font-size: 1rem;
+    line-height: 1rem;
  }
 
  @media (min-width: 992px) {
