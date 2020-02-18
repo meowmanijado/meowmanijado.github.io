@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     padding: 0;
     margin: 0;
@@ -34,19 +34,34 @@ header {
 } 
 
 .post-month {
-    @apply mb-0 text-sm uppercase
+    @apply mb-0 text-sm uppercase;
+
+    margin-top: 50px;
 }
 
 .post-list {
-    @apply leading-loose list-none pl-3
+    @apply list-none pl-3;
+
+    font-size: 13px;
+    line-height: 3.5;
 }
 
 .post-list li a {
-    @apply no-underline
+    @apply no-underline;
+
+    text-decoration: none;
+    border-bottom: solid 1px #000;
+    padding-bottom: 4px;
 }
 
 .post-list li a:hover {
-    @apply underline
+    @apply font-bold
+}
+
+.post-list li span {
+    color: #b3b3b3;
+    margin-left: 10px;
+    font-size: 12px;
 }
 
  a {
