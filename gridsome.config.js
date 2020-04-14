@@ -2,6 +2,7 @@ module.exports = {
   siteName: 'Web Developer',
   siteDescription: "Bleda is a blog starter kit for Gridsome, the Vue.js static site generator. It's inspired by Attila for Ghost, and styled with Tailwind CSS.",
   siteUrl: 'https://meow.codes',
+  pathPrefix: '/meowmanijado.github.io',
   titleTemplate: `%s | Meow Manijado`,
   icon: 'src/favicon.png',
 
