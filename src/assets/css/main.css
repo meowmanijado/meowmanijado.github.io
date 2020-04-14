@@ -1,0 +1,66 @@
+/*! purgecss start ignore */
+@import 'tailwindcss/base';
+/*! purgecss end ignore */
+
+@import 'components/resets';
+
+@import 'tailwindcss/components';
+
+@import 'components/markdown';
+
+@import 'tailwindcss/utilities';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo {
+    font-family: 'Karla', sans-serif;
+
+    @apply my-16 pt-16 text-2xl;
+}
+
+.logo-sub {
+    font-family: 'Karla', sans-serif;
+
+    @apply text-2xl;
+}
+
+p {
+    @apply .leading-loose .mb-4;
+    color: #929292;
+}
+
+a {
+    @apply .text-black underline;
+
+    &:hover {
+        @apply .text-black;
+    }
+}
+
+.post-list {
+    @apply list-none pl-3;
+
+    font-size: 13px;
+    line-height: 3.5;
+}
+
+.post-list a {
+    @apply no-underline;
+
+    text-decoration: none;
+    border-bottom: solid 1px #000;
+    padding-bottom: 4px;
+}
+
+.post-list .time {
+    color: #b3b3b3;
+    margin-left: 10px;
+    font-size: 12px;
+}
