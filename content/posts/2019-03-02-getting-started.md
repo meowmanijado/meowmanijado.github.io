@@ -5,8 +5,7 @@ description: "Getting started with the Bleda blog starter theme for the Gridsome
 date: 2019-03-01 14:43:24
 author: bleda
 tags:
-    - getting-started
-    - projects
+    - Today I learned
 cover: https://images.unsplash.com/photo-1521321205814-9d673c65c167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2253&q=80
 ---
 

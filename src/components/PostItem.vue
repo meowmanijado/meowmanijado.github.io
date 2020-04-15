@@ -1,13 +1,10 @@
 <template>
   <article>
-          <g-link :to="`${post.path}/`" class="text-gray-700 capitalize border-b border-transparent hover:border-gray-400 transition-colors duration-300">{{ post.title }}</g-link>
-          <time :datetime="post.datetime" class="time">{{ formatPublishDate(post.datetime) }}</time>
+    <span v-if="post.tags && post.tags.length > 0"> <g-link :to="`${post.tags[0].path}/`" class="text-gray-700 capitalize border-b border-transparent hover:border-gray-400 transition-colors duration-300 mr-2">{{ titleCase(post.tags[0].title) }}</g-link></span>
 
-          <p class="">
-            <span v-if="post.tags && post.tags.length > 0"> in <g-link :to="`${post.tags[0].path}/`" class="text-gray-700 capitalize border-b border-transparent hover:border-gray-400 transition-colors duration-300">{{ titleCase(post.tags[0].title) }}</g-link></span>
-            <span v-if="post.author || (post.tags && post.tags.length > 0)"> · </span>
-            <span>{{ post.timeToRead }} min read</span>
-          </p>
+        <g-link :to="`${post.path}/`" class="text-gray-700 capitalize border-b border-transparent hover:border-gray-400 transition-colors duration-300">{{ post.title }}</g-link>
+        <time :datetime="post.datetime" class="time">{{ formatPublishDate(post.datetime) }}</time>
+        <span class="ml-2">{{ post.timeToRead }} min read</span>
   </article>
 </template>
 

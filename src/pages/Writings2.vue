@@ -1,25 +1,21 @@
 <template>
   <Layout class="bg-white">
     <main class="max-w-screen-lg mx-auto">
-        <div class="flex items-center flex-col-reverse lg:flex-row md:flex-row lg:mx-0 mx-10">
-          <div class="lg:w-3/5 md:w-3/5 w-full">
-            <h1 class="logo">
-              <g-link to="/" class="no-underline">@meomanijado</g-link>
-            </h1>
-
-            <p>Web Developer based from Manila. I love building solutions and  
-                solving things together with code and design. Most of my <g-link to="/projects" >projects</g-link> are  primarily focused on Laravel and Vue JS. In my spare time I enjoy doing <a href="/">side projects</a> and <g-link to="/writings">write</g-link> about coding, daily learnings & musings.</p>
-            <p>Outside programming, I also love running, mountain climbing  and reading books.</p>
-                
-            <p>Formerly Senior Developer at Traxion Tech. Inc. && Frontend Web Engineer at Wishland Software Technology Inc. </p>
-          </div>
-        </div>
+      <site-header />
+        <p class="text-center my-16 uppercase tracking-widest">Curated list of my thoughts 💬</p>
+        <p class="mb-4 text-sm uppercase">Today I Learned</p>
+        <section class="lg:mx-0 mx-10 post-list">
+          <post-item v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
+        </section>
+        <pagination :info="$page.posts.pageInfo" base="writings" v-if="$page.posts.pageInfo.totalPages > 1" />
+        <site-footer class="py-8 sm:py-16" />
     </main>
   </Layout>
 </template>
 
 <script>
 import config from '~/.temp/config.js'
+import SiteHeader from '@/components/Header'
 import SiteFooter from '@/components/Footer'
 import PostItem from '@/components/PostItem'
 import Pagination from '@/components/Pagination'
@@ -28,6 +24,7 @@ export default {
   components: {
     PostItem,
     Pagination,
+    SiteHeader,
     SiteFooter,
   },
   metaInfo () {
@@ -61,7 +58,7 @@ export default {
 </script>
 
 <page-query>
-  query Home ($page: Int) {
+  query TIL ($page: Int) {
     posts: allPost (page: $page, perPage: 6) @paginate {
       totalCount
       pageInfo {

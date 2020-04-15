@@ -1,7 +1,7 @@
 <template>
     <header class="flex justify-between items-center lg:mx-0 mx-10 pt-16">
         <h1 class="logo-sub">
-            <g-link to="/" class="no-underline">@meomanijado</g-link>
+            <g-link to="/" class="no-underline">@meowmanijado</g-link>
         </h1>
         <nav class="flex justify-center">
             <button @click="toggleMenu()" style="position: absolute; z-index: 999; outline: none;">

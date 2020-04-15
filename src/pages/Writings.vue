@@ -57,7 +57,7 @@ export default {
 </script>
 
 <page-query>
-  query Writings ($page: Int) {
+  query TIL ($page: Int) {
     posts: allPost (page: $page, perPage: 6) @paginate {
       totalCount
       pageInfo {
