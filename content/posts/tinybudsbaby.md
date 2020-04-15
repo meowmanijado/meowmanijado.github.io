@@ -4,6 +4,7 @@ description: ""
 author: meow
 date: 2017-08-01
 slug: tinybudsbaby
+fullscreen: true
 tags:
     - projects
 cover: http://localhost:8081/images/posts/tinybuds-homepage.jpg
