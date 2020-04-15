@@ -36,6 +36,10 @@ module.exports = {
           projects: {
             typeName: 'Project',
             create: true
+          },
+          writings: {
+            typeName: 'Writings',
+            create: true
           }
         },
       },
