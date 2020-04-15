@@ -58,7 +58,7 @@ export default {
 
 <page-query>
   query TIL ($page: Int) {
-    posts: allPost (page: $page, perPage: 6) @paginate {
+    posts: allPost (page: $page, perPage: 10) @paginate {
       totalCount
       pageInfo {
         totalPages

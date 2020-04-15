@@ -4,7 +4,7 @@
         <div class="flex items-center flex-col-reverse lg:flex-row md:flex-row lg:mx-0 mx-10">
           <div class="lg:w-3/5 md:w-3/5 w-full">
             <h1 class="logo">
-              <g-link to="/" class="no-underline">@meomanijado</g-link>
+              <g-link to="/" class="no-underline">@meowmanijado</g-link>
             </h1>
 
             <p>Web Developer based from Manila. I love building solutions and  
@@ -12,6 +12,11 @@
             <p>Outside programming, I also love running, mountain climbing  and reading books.</p>
                 
             <p>Formerly Senior Developer at Traxion Tech. Inc. && Frontend Web Engineer at Wishland Software Technology Inc. </p>
+
+            <h4 class="font-bold mt-16 text-gray text-xs">ELSEWHERE</h4>
+            <div class="text-sm mt-3">
+              <a href="https://github.com/meowmanijado" target="_blank">GitHub</a> · <a href="https://twitter.com/meowmanijado" target="_blank">Twitter</a> · <a href="https://www.linkedin.com/in/sharmaine-manijado/" target="_blank">LinkedIn</a>
+            </div>
           </div>
         </div>
     </main>

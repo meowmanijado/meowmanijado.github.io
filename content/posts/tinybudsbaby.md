@@ -2,6 +2,7 @@
 title: "Tinybuds Baby"
 description: ""
 author: meow
+date: 2017-08-01
 slug: tinybudsbaby
 tags:
     - projects

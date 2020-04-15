@@ -1,6 +1,8 @@
 .markdown {
   p, ul, ol {
-    @apply mb-4;
+    @apply mb-4 text-sm;
+
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
   }
 
   ul li, ol li {
@@ -82,6 +84,10 @@
 
   hr {
     @apply h-px bg-gray-300 my-8;
+  }
+
+  strong {
+    color: rgb(51, 51, 51)
   }
 }
 
