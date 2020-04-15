@@ -4,10 +4,10 @@ description: ""
 author: meow
 date: 2017-08-01
 slug: tinybudsbaby
-fullscreen: true
+fullscreen: false
 tags:
     - projects
-cover: http://localhost:8081/images/posts/tinybuds-homepage.jpg
+cover: https://raw.githubusercontent.com/meowmanijado/meowmanijado.github.io/develop/static/images/posts/tinybuds-homepage.jpg
 ---
 
 Tinybuds is an online shop selling natural products for babies.
