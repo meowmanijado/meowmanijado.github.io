@@ -45,7 +45,7 @@ a {
 }
 
 .post-list {
-    @apply list-none pl-3;
+    @apply list-none;
 
     font-size: 13px;
     line-height: 3.5;

@@ -1,9 +1,9 @@
 <template>
-  <article class="flex items-center border-b h-screen">
-    <div class="w-1/2 article-img">
+  <article class="lg:flex items-center border-b h-screen">
+    <div class="w-full lg:w-1/2 article-img">
       <img :src="post.cover" />
     </div>
-    <div class="w-1/2 px-6">
+    <div class="w-full lg:w-1/2 px-6">
       <div class="py-8 sm:py-20">
         <header class="text-center mb-8">
           <h2 class="leading-tight font-sans mb-1 sm:mb-2 text-lg uppercase">

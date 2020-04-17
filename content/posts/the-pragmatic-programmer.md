@@ -6,13 +6,18 @@ tags:
     - Books
     - Technical Books
 ---
+
+Here are some of the exceprts strike in me on this book.
+
 **What makes a Pragmatic Programmer?**
 
-Easy adopter/fast adapter
-Inquisitive - You need to ask questions.
-Critical Thinker
-Realistic
-Jack of all trades - You try to be familiar with a broad range of technologies and environments, and you work to keep abreast of new developments.
+- Easy adopter/fast adapter
+- Inquisitive 
+- You need to ask questions.
+- Critical Thinker
+- Realistic
+- Jack of all trades 
+- You try to be familiar with a broad range of technologies and environments, and you work to keep abreast of new developments.
 
 ```
 Tip #1
@@ -22,10 +27,12 @@ Care about your craft.
 ```
 Tip #2
 Think! About your Work
-Kaizen is a Japanese term that captures the concept of continuously making many small improvements.
 ```
 
-Chapter 1: A Pragmatic Philosophy
+**Kaizen** is a Japanese term that captures the concept of continuously making many small improvements.
+
+
+**A Pragmatic Philosophy**
 
 It's an attitude, a style, a philosophy of approaching problems and their solutions. They think beyond the immediate probles, always trying to take place it in its larger context, always trying to be aware of the bigger picture.
 
@@ -35,15 +42,27 @@ Take responsibly
 ```
 Tip #3
 Provide Options, Don't Make Lame Excuses
-Software Entropy
-Entropy is a term from physics that refers to the amount of "disorder" in a system.
 ```
+**Software Entropy**
 
-A broken window.
+**Entropy** is a term from physics that refers to the amount of "disorder" in a system.
+
+**A broken window.**
 
 One broken window, left unrepaired for any substantial length of time, instills in the inhabitants of the building a sense of abandonment-a sense that the powers that be don't care about the building. So another window gets broken. People start littering. Graffiti appears. Serious structural damage begins. In a relatively short space of time, the building becomes damaged beyond the owners's desire to fix it, and the sense of abandonment becomes reality.
 ```
 Tip #4
 Don't live with broken windows.
-Stone Soup and Boiled Frogs
 ```
+**Stone Soup and Boiled Frogs**
+
+Work out what you can reasonably ask for. Develop it well. Once you've got it, show people and let them marve. Then say "of course, it would be better if we added..." Pretend it's not important. Sit back and wait for them to start asking you to add the functionality you originally wanted. People find it easier to join an ongoing success. Show them a glimpse of a future and you'll get them to rally about.
+
+```
+Tip #5 
+Be a catalyst for change.
+```
+
+![](/images/posts/IMG_4347.JPG)
+
+Sorry, this book is so good that I couldn't put all my highlights here on this page. 😬

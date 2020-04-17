@@ -16,7 +16,7 @@
           <p><strong>About this blog</strong></p>
           <p>I write becuase this is my weakness, I'm not good in communicating, always stuttered talking to someone in english. And as other bloggers said, this is my way to express my dump of thoughts, learnings and share the lessons from the books, if it's worth sharing!</p>
           <p><strong>Stuffs~</strong></p>
-          <p>Aside from writing codes and stuffs I also love mountain climbing, running, planting and reading books. My favorite genre is classic! Other stuffs that pique my interest are coffee brewing, building gunpla, watching a lot of movies and series. I also serve in Technical Ministry in our local church. And also involved in environmental activities like tree planting and nurturing, and outreach on Indigenous People.</p>
+          <p>Aside from writing codes and stuffs I also love mountain climbing, running, planting and reading books. My favorite genre is classic! Other stuffs that pique my interest are coffee brewing, building gunpla, watching a lot of movies and series. I also serve in Technical Ministry in our local church. And also involved in environmental activities like tree planting and nurturing, and doing outreach to Indigenous People.</p>
           <p>I am currently learning sign language and TDD Testing in PHP.</p>
         </div>
       </article>

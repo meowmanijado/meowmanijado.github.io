@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <main class="max-w-screen-lg mx-auto">
+    <main class="max-w-screen-lg mx-auto px-10 lg:px-0">
       <site-header />
       <p class="text-center my-16 uppercase tracking-widest text-sm">Selected Projects.</p>
       <section class="max-w-screen-lg mx-auto post-list">

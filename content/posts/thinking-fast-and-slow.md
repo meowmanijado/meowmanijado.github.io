@@ -2,6 +2,7 @@
 title: "📚 Thinking Fast and Slow by Daniel Kahneman"
 slug: thinking-fast-and-slow
 date: 2020-04-12
+fullscreen: false
 tags:
     - Books
     - Psychology
@@ -13,3 +14,5 @@ quick duration-neglect. How we often repeat the mistakes of the past, continuall
 ourselves that we know what we already know without actually thinking.
 
 Ultimate Takeaway, there's math in Psychology!!
+
+![](/images/posts/IMG_4341.JPG)

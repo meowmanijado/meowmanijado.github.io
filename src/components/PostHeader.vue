@@ -6,9 +6,6 @@
           <p class="text-white text-xs mb-2 uppercase">{{ post.timeToRead }} min read</p>
           <h1 class="text-3xl sm:text-5xl font-sans font-bold leading-tight mb-2 text-white">{{ post.title }}</h1>
           <p class="text-white">
-            <span v-if="post.author">
-              <g-link :to="`${post.author.path}/`" class="text-white capitalize border-b border-transparent hover:border-white transition-colors duration-300">{{ titleCase(post.author.title) }}</g-link> &bull;
-            </span>
             <time :datetime="post.datetime" class="capitalize">{{ formattedPublishDate }}</time>
           </p>
         </div>

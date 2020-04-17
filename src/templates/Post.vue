@@ -25,12 +25,12 @@
               </g-link>
             </figure>
             <div class="px-4 sm:w-4/5 text-center sm:text-left">
-              <h4 class="font-sans font-bold text-lg sm:text-xl mb-2 sm:mb-4">
-                <g-link :to="`${$page.post.author.path}/`" class="text-black hover:text-gray-600 capitalize border-b-2 border-transparent transition-colors duration-300">{{ titleCase($page.post.author.title) }}</g-link>
+              <h4 class="font-sans font-bold text-lg sm:text-xl">
+                <p class="text-black capitalize border-b-2 border-transparent transition-colors duration-300 mb-0">{{ titleCase($page.post.author.title) }}</p>
               </h4>
-              <p class="leading-normal">
-                <g-link :to="`${$page.post.author.path}/`" class="text-blue-500 hover:text-blue-400 transition-colors duration-300">See all posts by {{ titleCase($page.post.author.title) }} &rarr;</g-link>
-              </p>
+                <div class="text-sm">
+                <a href="https://github.com/meowmanijado" target="_blank">GitHub</a> · <a href="https://twitter.com/meowmanijado" target="_blank">Twitter</a> · <a href="https://www.linkedin.com/in/sharmaine-manijado/" target="_blank">LinkedIn</a>
+              </div>
             </div>
           </div>
         </footer>
@@ -114,7 +114,7 @@ export default {
       return config
     },
     avatar () {
-      return `/images/authors/${this.$page.post.author.id}.png`
+      return `/images/authors/${this.$page.post.author.id}.jpg`
     },
     postIsOlderThanOneYear () {
       let postDate = moment(this.$page.post.datetime)

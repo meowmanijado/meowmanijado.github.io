@@ -4,3 +4,10 @@ slug: the-five-people-you-meet-in-heaven
 date: 2020-03-15
 tags:
     - Books
+
+---
+> Ruby stepped toward him, "Edward," she said softly. It was the first time she called him by name. "Learn this from me. Holding anger is a poison. It eats you from inside. We think that hating is a weapon that attacks the person who harmed us. But hatred is a curved blade. And the harm we do, we do to ourselves."
+
+<!-- -->
+
+> "Lost love is still love, Eddie. It takes a different form, that's all. You can't see their smile or bring them food or tousle their hair or move them around a dance floor. But when those senses weaken, another heightens, Memory. Memory becomes your partner. You nurture it. You hold it. You dance with it."

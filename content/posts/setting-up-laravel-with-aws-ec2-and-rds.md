@@ -14,14 +14,15 @@ tags:
 
 *Note: This is not an how to ultimate guide, it's my personal documentation how I manage to set this up and for future cheatsheet.*
 
-## Prerequisite
+##### Prerequisite
 ---
-- Account to AWS Fre Tier
+- AWS Fre Tier account
 - Laravel Project Repository
  
-
-## AWS EC2
+### Set-up AWS EC2
 ---
+Elastic Compute Cloud or EC2 is basically our vitual computers where we create, launch and terminate the server-instances.
+
 1. Create EC2 instance
 2. Select (Free tier eligible) Ubuntu Server 18.04 LTS (HVM), SSD Volume Type
 3. Select Next Configure Security Group
@@ -31,24 +32,24 @@ tags:
 
 > A key pair consists of a public key that AWS stores, and a private key file that you store. Together, they allow you to connect to your instance securely. For Windows AMIs, the private key file is required to obtain the password used to log into your instance. For Linux AMIs, the private key file allows you to securely SSH into your instance.
 
---
+<!-- -->
+
 > You have to download the private key file (*.pem file) before you can continue. Store it in a secure and accessible location. You will not be able to download the file again after it's created.
 
 Once the instance already created, you can now access the server using ssh
 
-```
+```bash
 ssh ubuntu@1xx.xx.xx.xxx -i ~/document-path-of-pem-file.pem
 ```
 
-## Installing Nginx
----
-```
+##### Installing Nginx
+```bash
 sudo apt update
 sudo apt install nginx
 ```
 
 Checking web server
-```
+```bash
 systemctl status nginx
 ```
 ```bash
@@ -68,41 +69,37 @@ Now Nginx appears starterd successfully.
 
 To check on the browser, call the public IP address that you can get on the instance page, then you can see the Welcome to NGINX!
 
-For more detailed instruction I followed this tutorial!
+For more detailed instruction I followed this tutorial:
 
 https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04
 
 ✏️ *Note to self: Write Nginx cheatsheet for my future self!*
 
-## Installing PHP
----
+##### Installing PHP
 ```bash
 sudo apt install php-fpm php-mysql
-```
-```bash
 sudo apt install php7.4-mbstring php7.4-xmlrpc php7.4-soap php7.4-gd php7.4-xml php7.4-cli php7.4-zip
 ```
 
-## Configure SSH
----
+##### Configure SSH
 ```bash
 $ ssh-key-gen
 $ cat ~/.ssh/id_rsa.pub
 ```
 
-Other resources:
+Other resources I followed to set-up SSH:
+
 https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604
 
 https://help.github.com/en/github/authenticating-to-github/error-permission-denied-publickey
 
  
 
-## Installing composer
-___
+##### Installing composer
 https://linuxize.com/post/how-to-install-and-use-composer-on-ubuntu-18-04/
 
  
-## Configuring Nginx to Use the PHP Processor
+##### Configuring Nginx to Use the PHP Processor
 ```bash
 sudo nano /etc/nginx/sites-available/spartan
 ```
@@ -119,7 +116,7 @@ server {
 ​
         location ~ \.php$ {
                 include snippets/fastcgi-php.conf;
-                fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+                fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
         }
 ​
         location ~ /\.ht {
@@ -128,7 +125,7 @@ server {
 }
 ```
  
-Enable your new server block by creating a symbolic link from your new server block configuration file (in the `/etc/nginx/sites-available/ directory)` to the `/etc/nginx/sites-enabled/` directory:
+Now enable your new server block by creating a symbolic link from your new server block configuration file in the `/etc/nginx/sites-available/ directory` to the `/etc/nginx/sites-enabled/` directory:
 
  
 ```bash
@@ -166,16 +163,18 @@ echo phpinfo();
 
 It should display the PHP info.
 
-🤔 What is the difference of Mysql and MariaDB?
+### Set-up AWS RDS
+---
+https://linuxacademy.com/guide/15653-using-aws-rds-with-laravel-october-cms/
 
- 
-
-Debugging
-https://stackoverflow.com/questions/41147609/unable-to-start-the-mysql-server-in-ubuntu
-
+##### Installing MySQL
 ```bash
 apt install php7.4-mysql
 ```
+
+Debugging links:
+
+https://stackoverflow.com/questions/41147609/unable-to-start-the-mysql-server-in-ubuntu
+
 https://stackoverflow.com/questions/37212945/aws-cant-connect-to-rds-database-from-my-machine
 
-https://linuxacademy.com/guide/15653-using-aws-rds-with-laravel-october-cms/
