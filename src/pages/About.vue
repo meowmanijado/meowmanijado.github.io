@@ -52,8 +52,8 @@ export default {
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: 'About' },
         { name: "twitter:description", content: this.ogDescription },
-        { name: "twitter:site", content: "@cossssmin" },
-        { name: "twitter:creator", content: "@cossssmin" },
+        { name: "twitter:site", content: "@meowmanijado" },
+        { name: "twitter:creator", content: "@meowmanijado" },
         { name: "twitter:image", content: this.ogImageUrl },
       ],
     }
@@ -66,7 +66,7 @@ export default {
       return 'Introduction to the Bleda blog starter for Gridsome.'
     },
     ogImageUrl () {
-      return `${this.config.siteUrl}/images/bleda-card.png`
+      return `${this.config.siteUrl}/images/meow-card.png`
     }
   },
 }

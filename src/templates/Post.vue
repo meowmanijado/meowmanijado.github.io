@@ -73,8 +73,8 @@ export default {
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: this.$page.post.title },
         { name: "twitter:description", content: this.description(this.$page.post) },
-        { name: "twitter:site", content: "@cossssmin" },
-        { name: "twitter:creator", content: "@cossssmin" },
+        { name: "twitter:site", content: "@meowmanijado" },
+        { name: "twitter:creator", content: "@meowmanijado" },
         { name: "twitter:image", content: this.ogImageUrl },
       ],
     }
@@ -125,7 +125,7 @@ export default {
       return postPath ? `${siteUrl}${postPath}` : `${siteUrl}/${slugify(this.$page.post.title)}/`
     },
     ogImageUrl () {
-      return this.$page.post.cover || `${this.config.siteUrl}/images/bleda-card.png`
+      return this.$page.post.cover || `${this.config.siteUrl}/images/meow-card.png`
     }
   },
 }
