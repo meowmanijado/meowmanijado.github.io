@@ -25,12 +25,32 @@ system other than ToDo apps, and a successful project built in Laravel.
 - Calculate total payment
 - Real-time view of current customers
 
-**Challenges**
+**Challenge**
 
-The challenge here was monitoring the time because the studio opens in the middle 
-of the day from 12PM - 6AM.
 ```php
+/**
+* Get the current shift of the office hours.
+*
+* Since the office's shift is between two days (12pm - 6am),
+* we have to use the current time to determine what the shift is.
+*
+* @return string
+*/
 
+private static function shift()
+{
+    $now = now()->setTime(11, 0, 0);
+
+    /**
+        * If the current time is before 12pm, then we'll assume we're
+        * still supposed to be looking at yesterday's transactions.
+        */
+    if (now()->format('H') < 11) {
+        $now->subDays(1);
+    }
+
+    return $now->format('Y-m-d H:i:s');
+}
 ```
 
 
@@ -40,8 +60,9 @@ I have'nt experienced deploying a Laravel app before, gladly the internet is
 generous in resources, also, the app needs to be deployed locally but the thing
 is Chan wants to accessed the system anywhere
 ```bash
-php artisan serve
+php artisan serve --host 192.168.1.12 --port 80
 ```
+*Note: Change the host based on your IP Address*
 
 I feel like I have so many stuffs I need to improve, `eloquent` , `queries`, better model
 structure and a lot more, but I'm pretty happy with the result, knowing that they actually using

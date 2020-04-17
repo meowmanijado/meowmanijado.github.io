@@ -1,6 +1,6 @@
 <template>
   <section>
-      <div class="max-w-screen-lg mx-auto post-list">
+      <div class="max-w-screen-lg mx-auto post-list px-10 lg:px-0">
         <post-item v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node" />
       </div>
       <pagination :base="`${$page.tag.path}`" :info="$page.tag.belongsTo.pageInfo" v-if="$page.tag.belongsTo.pageInfo.totalPages > 1" />

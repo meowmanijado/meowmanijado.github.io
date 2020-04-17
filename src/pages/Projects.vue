@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <main class="max-w-screen-lg mx-auto px-10 lg:px-0">
-      <site-header />
+    <main class="max-w-screen-lg mx-auto px-10 lg:px-0" :class="{menuOpen: isOpen}">
+      <site-header @clicked="openMenu" />
       <p class="text-center my-16 uppercase tracking-widest text-sm">Selected Projects.</p>
-      <section class="max-w-screen-lg mx-auto post-list">
+      <section class="max-w-screen-lg mx-auto post-list px-10 lg:px-0">
         <post-item v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node" />
       </section>
       <pagination :base="`${$page.tag.path}`" :info="$page.tag.belongsTo.pageInfo" v-if="$page.tag.belongsTo.pageInfo.totalPages > 1" />
@@ -52,9 +52,20 @@ export default {
       ],
     }
   },
+
+  data() {
+    return {
+      isOpen: false
+    }
+  },
+
   methods: {
     titleCase(str) {
       return str.replace('-', ' ').split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')
+    },
+
+    openMenu(value) {
+      this.isOpen = value
     }
   },
   computed: {

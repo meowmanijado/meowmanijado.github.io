@@ -1,7 +1,7 @@
 <template>
   <Layout class="bg-white">
-    <main class="max-w-screen-lg mx-auto">
-      <site-header />
+    <main class="max-w-screen-lg mx-auto" :class="{menuOpen: isOpen}">
+      <site-header @clicked="openMenu" />
         <p class="text-center my-16 uppercase tracking-widest">Curated list of my thoughts 💬</p>
         <section class="lg:mx-0 mx-10 post-list">
           <post-item v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
@@ -53,6 +53,16 @@ export default {
       return `${this.config.siteUrl}/images/bleda-card.png`
     }
   },
+  data() {
+    return {
+      isOpen: false
+    }
+  },
+  methods: {
+    openMenu(value) {
+      this.isOpen = value
+    }
+  }
 }
 </script>
 

@@ -25,10 +25,18 @@ body {
     @apply my-16 pt-16 text-2xl;
 }
 
+.logo a:hover {
+    @apply font-normal
+}
+
 .logo-sub {
     font-family: 'Karla', sans-serif;
 
     @apply text-2xl;
+}
+
+.logo-sub a:hover {
+    @apply font-normal
 }
 
 p {
@@ -37,10 +45,10 @@ p {
 }
 
 a {
-    @apply .text-black underline;
+    @apply text-black underline;
 
     &:hover {
-        @apply .text-black;
+        @apply text-black font-bold;
     }
 }
 
@@ -66,4 +74,8 @@ a {
 
 .post-category a {
     border: none;
+}
+
+.menuOpen {
+    @apply overflow-hidden h-screen;
 }

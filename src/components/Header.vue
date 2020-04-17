@@ -4,7 +4,7 @@
             <g-link to="/" class="no-underline">@meowmanijado</g-link>
         </h1>
         <nav class="flex justify-center">
-            <button @click="toggleMenu()" style="position: absolute; z-index: 999; outline: none;">
+            <button @click="toggleMenu()" style="position: absolute; z-index: 999; outline: none; margin-top: -8px;">
                 <div class="nav-icon" :class="{open: isOpen}">
                     <span></span>
                     <span></span>
@@ -15,11 +15,11 @@
                 </div>
             </button>
             <div v-show="isOpen" class="absolute flex h-screen header-menu items-center justify-center left-0 text-2xl top-0 w-full">
-                <ul>
+                <ul class="leading-loose">
                     <li><g-link to="/">Home</g-link></li>
                     <li><g-link to="/writings">Writings</g-link></li>
                     <li><g-link to="/projects">Projects</g-link></li>
-                    <li><g-link to="/projects">Contact</g-link></li>
+                    <li><a href="mailto:sharmainemanijado@gmail.com">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -39,9 +39,7 @@ export default {
   methods: {
       toggleMenu() {
           this.isOpen = !this.isOpen
-          document.querySelector('.nav-icon').classList.add('open')
-          document.querySelector('.header-menu').style.opacity = '1'
-          document.querySelector('.header-menu').style.visibility = 'visible'
+          this.$emit('clicked', this.isOpen)
       }
   }
 }
@@ -63,6 +61,7 @@ export default {
     color: #22292f;
     background: #fff;
     text-decoration: none;
+    font-weight: normal;
 }
 
 .nav-icon {

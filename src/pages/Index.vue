@@ -8,7 +8,7 @@
             </h1>
 
             <p>Web Developer based from Manila. I love building solutions and  
-                solving things together with code and design. Most of my <g-link to="/projects" >projects</g-link> are  primarily focused on Laravel and Vue JS. In my spare time I enjoy doing <a href="/">side projects</a> and <g-link to="/writings">write</g-link> about coding, daily learnings & musings.</p>
+                solving things together with code and design. Most of my <g-link to="/projects" >projects</g-link> are  primarily focused on Laravel and Vue JS. In my spare time I enjoy doing <a href="/projects">side projects</a> and <g-link to="/writings">write</g-link> about coding, daily learnings & musings.</p>
             <p>Outside programming, I also love running, mountain climbing  and reading books.</p>
                 
             <p>Formerly Senior Developer at Traxion Tech. Inc. && Frontend Web Engineer at Wishland Software Technology Inc. </p>

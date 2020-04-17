@@ -11,7 +11,7 @@
           <g-link to="/" class="text-sm border text-gray-900 border-gray-400 opacity-75 hover:opacity-100 rounded-full px-4 py-2 transition-opacity duration-300">&larr; Home</g-link>
         </nav>
       </header>
-      <section class="max-w-screen-lg mx-auto post-list">
+      <section class="max-w-screen-lg mx-auto post-list px-10 lg:px-0">
         <post-item v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node" />
       </section>
       <pagination :base="`${$page.tag.path}`" :info="$page.tag.belongsTo.pageInfo" v-if="$page.tag.belongsTo.pageInfo.totalPages > 1" />

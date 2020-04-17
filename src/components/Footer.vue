@@ -1,22 +1,26 @@
 <template>
   <footer class="flex flex-wrap justify-between leading-normal max-w-screen-lg mx-auto py-8 sm:py-16 text-gray-700 text-sm">
     <div class="w-full sm:w-1/2 mb-4 sm:mb-0">
-      <p class="mx-2">Built with <a href="https://gridsome.org" class="border-b border-transparent hover:border-gray-400 transition-colors duration-300">Gridsome</a> &amp; <a href="https://tailwindcss.com/" class="border-b border-transparent hover:border-gray-400 transition-colors duration-300">Tailwind CSS</a>.</p>
+      <p class="mx-2">Built with <a href="https://gridsome.org" class="border-b border-transparent hover:font-bold transition-colors duration-300">Gridsome</a> &amp; <a href="https://tailwindcss.com/" class="border-b border-transparent hover:font-bold transition-colors duration-300">Tailwind CSS</a>.</p>
     </div>
     <div class="w-full sm:w-1/2">
       <nav>
-        <ul class="flex sm:justify-end">
+      <p class="flex sm:justify-end">Contact me at <a href="mailto:sharmainemanijado@gmail.com" class="block ml-2">sharmainemanijado@gmail.com</a></p>
+        <ul class="flex sm:justify-end hidden">
           <li class="px-2">
-            <g-link to="/" class="border-b border-transparent hover:border-gray-400 transition-colors duration-300">Home</g-link>
+            <g-link to="/" class="border-b border-transparent hover:font-bold transition-colors duration-300">Home</g-link>
           </li>
           <li class="px-2">
-            <g-link to="/about/" class="border-b border-transparent hover:border-gray-400 transition-colors duration-300">About</g-link>
+            <g-link to="/about/" class="border-b border-transparent hover:font-bold transition-colors duration-300">About</g-link>
           </li>
           <li class="px-2">
-            <a href="/sitemap.xml" class="border-b border-transparent hover:border-gray-400 transition-colors duration-300">Sitemap</a>
+            <g-link to="/projects/" class="border-b border-transparent hover:font-bold transition-colors duration-300">Projects</g-link>
           </li>
           <li class="px-2">
-            <a href="/feed.xml" class="border-b border-transparent hover:border-gray-400 transition-colors duration-300">RSS Feed</a>
+            <g-link to="/writings/" class="border-b border-transparent hover:font-bold transition-colors duration-300">Writings</g-link>
+          </li>
+          <li class="px-2">
+            <g-link to="/about/" class="border-b border-transparent hover:font-bold transition-colors duration-300">Contact</g-link>
           </li>
         </ul>
       </nav>
