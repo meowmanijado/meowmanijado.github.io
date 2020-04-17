@@ -2,7 +2,7 @@
   <Layout class="bg-white">
     <main class="max-w-screen-lg mx-auto" :class="{menuOpen: isOpen}">
       <site-header @clicked="openMenu" />
-        <p class="text-center my-16 uppercase tracking-widest">Curated list of my thoughts 💬</p>
+        <p class="text-center my-16 uppercase tracking-widest text-sm">Curated list of my thoughts 💬</p>
         <section class="lg:mx-0 mx-10 post-list">
           <post-item v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
         </section>

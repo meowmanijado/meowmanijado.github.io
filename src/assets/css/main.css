@@ -67,6 +67,10 @@ a {
     padding-bottom: 4px;
 }
 
+.post-list a:hover {
+    font-weight: normal;
+}
+
 .post-list .time {
     color: #b3b3b3;
     font-size: 12px;
