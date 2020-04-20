@@ -83,3 +83,7 @@ a {
 .menuOpen {
     @apply overflow-hidden h-screen;
 }
+
+.menuOpen .header-menu {
+    
+}

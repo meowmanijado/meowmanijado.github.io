@@ -14,7 +14,7 @@
                     <span></span>
                 </div>
             </button>
-            <div v-show="isOpen" class="absolute flex h-screen header-menu items-center justify-center left-0 text-2xl top-0 w-full">
+            <div :style="{visibility: isOpen ? 'visible' : 'hidden'}"  :class="{active: isOpen == true, inactive: isOpen == false }" class="header-menu">
                 <ul class="leading-loose">
                     <li><g-link to="/">Home</g-link></li>
                     <li><g-link to="/writings">Writings</g-link></li>
@@ -46,7 +46,19 @@ export default {
 </script>
 <style>
 .header-menu {
-    background-color: #1d1d1f;
+  @apply w-full absolute left-0 top-0 flex items-center justify-center text-2xl;
+
+  background-color: #1d1d1f;
+  height: 0px;
+  transition: 0.3s;
+}
+
+.header-menu.active {
+    @apply h-screen;
+}
+
+.header-menu.inactive {
+    height: 0px;
 }
 
 .header-menu ul li {
