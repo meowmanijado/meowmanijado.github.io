@@ -14,7 +14,7 @@
                     <span></span>
                 </div>
             </button>
-            <div :style="{visibility: isOpen ? 'visible' : 'hidden'}"  :class="{active: isOpen == true, inactive: isOpen == false }" class="header-menu">
+            <div v-visible="isOpen" :class="{active: isOpen}" class="header-menu">
                 <ul class="leading-loose">
                     <li><g-link to="/">Home</g-link></li>
                     <li><g-link to="/writings">Writings</g-link></li>
@@ -41,6 +41,14 @@ export default {
           this.isOpen = !this.isOpen
           this.$emit('clicked', this.isOpen)
       }
+  },
+
+  directives: {
+    visible: {
+      function (el, binding) {
+        el.style.visibility = !!binding.value ? 'visible' : 'hidden'
+      }
+    }
   }
 }
 </script>
