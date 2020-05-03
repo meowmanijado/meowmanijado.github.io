@@ -19,7 +19,7 @@
             </g-link>
           </div>
           <div v-if="$page.post.author" class="flex flex-wrap items-center justify-center sm:justify-left border-t border-b border-gray-300 w-full mt-10 py-10 sm:px-16">
-            <figure class="px-2 mb-1 sm:mb-0 w-full sm:w-1/5 flex justify-center">
+            <figure class="px-2 mb-1 sm:mb-0 w-full sm:w-1/5 flex justify-center h-24">
               <img :src="avatar" :alt="$page.post.author.title" @error="imageLoadError" width="100" class="rounded-full p-4 sm:p-0">
             </figure>
             <div class="px-4 sm:w-4/5 text-center sm:text-left">
