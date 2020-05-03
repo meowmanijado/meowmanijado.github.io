@@ -1,7 +1,7 @@
 <template>
-  <footer class="flex flex-wrap justify-between leading-normal max-w-screen-lg mx-auto py-8 sm:py-16 text-gray-700 text-sm">
+  <footer class="flex flex-wrap justify-between leading-normal max-w-screen-lg mx-auto px-5 py-8 sm:py-16 text-gray-700 text-sm">
     <div class="w-full sm:w-1/2 mb-4 sm:mb-0">
-      <p class="mx-2">Built with <a href="https://gridsome.org" class="border-b border-transparent hover:font-bold transition-colors duration-300">Gridsome</a> &amp; <a href="https://tailwindcss.com/" class="border-b border-transparent hover:font-bold transition-colors duration-300">Tailwind CSS</a>.</p>
+      <p>Built with <a href="https://gridsome.org" class="border-b border-transparent hover:font-bold transition-colors duration-300">Gridsome</a> &amp; <a href="https://tailwindcss.com/" class="border-b border-transparent hover:font-bold transition-colors duration-300">Tailwind CSS</a>.</p>
     </div>
     <div class="w-full sm:w-1/2">
       <nav>

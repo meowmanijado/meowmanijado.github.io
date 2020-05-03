@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <main class="max-w-screen-lg mx-auto px-10 lg:px-0" :class="{menuOpen: isOpen}">
+    <main class="max-w-screen-lg mx-auto lg:px-0" :class="{menuOpen: isOpen}">
       <site-header @clicked="openMenu" />
       <p class="text-center my-16 uppercase tracking-widest text-sm">Selected Projects.</p>
       <section class="max-w-screen-lg mx-auto post-list px-10 lg:px-0">
